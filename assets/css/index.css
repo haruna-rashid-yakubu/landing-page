@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300 & family= Roboto:wght@300 & display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300;500&display=swap');
 
@@ -37,14 +38,28 @@
     --sectionEnd: #0F172A;
 /* Taille de tout les grands titre excepté celui de l'entete */
     --sizeTitle : 5.6rem
+}
 
+.logo {
+  background-color: var(--primarySectionColor);
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
 }
-html{
-    margin: 0;
-    padding: 0;
-    border: none;
-    font-size: 10px;
+
+img {
+  margin-left: 100px;
 }
+
+p {
+  margin-left: 170px;
+  font-size: 2rem;
+  margin-top: -25px;
+  color: var(--secondSection);
+  font-family: var();
+}
+
 body{
     margin: 0;
     padding: 0;
