@@ -37,6 +37,8 @@ Ce projet a été développé en utilisant les technologies suivantes :
 
 ![Capture d'écran de la Landing Page](screenshot.png)
 
+
+
 ## Contributeurs
 
 - rashid  (@johndoe)
