@@ -49,7 +49,7 @@ body{
 /* concernant le background et l'image */
 header{
     background: var(--headerColor);
-    height: 35rem;
+    height: 41rem;
     display: flex;
     justify-content: flex-end;
 }
