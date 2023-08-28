@@ -69,7 +69,7 @@ body{
                             /* Traitement de la section features */
 /* feautures principale */
 .features{
-    width: var(--sectionFeatureWidth);
+    width: 100vw;
     height: var(--sectionFeatureHeight);
     background-color: var(--BodyColor);
     border: 1px solid black;
@@ -168,7 +168,7 @@ body{
     }
     .features{
         padding: 2rem;
-        width: 50rem;
+        width: 100vw;
         height: 110rem;
         display: flex;
         align-items: flex-start;
