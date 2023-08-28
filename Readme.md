@@ -13,10 +13,12 @@ La landing page de Workeyamo est une page web simple conçue pour attirer l'atte
 Pour exécuter ce projet localement, suivez ces étapes :
 
 1. Clonez ce dépôt sur votre machine locale.
-`sh git clone https://github.com/votre-utilisateur/landing-page-workeyamo.git`
+```bash
+  $ git clone https://github.com/votre-utilisateur/landing-page-workeyamo.git
+  ```
 
 
-2. Ouvrez le fichier `index.html` dans votre navigateur web.
+1. Ouvrez le fichier `index.html` dans votre navigateur web.
 
 ## Utilisation
 
