@@ -51,7 +51,8 @@ body{
     overflow-x: hidden;
 }
 
-/* Traitement de la section features */
+                            /* Traitement de la section features */
+/* feautures principale */
 .features{
     width: var(--sectionFeatureWidth);
     height: var(--sectionFeatureHeight);
@@ -61,6 +62,7 @@ body{
     display: flex;
     align-items: center;
 }
+/* feautures principale */
 
 .features__main{
     width: 122rem;
@@ -110,16 +112,108 @@ body{
 }
 .features__main__image__box1{
     background-image: url("image/img6.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .features__main__image__box2{
     background-image: url("image/img7.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .features__main__image__box3{
     background-image: url("image/img8.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .features__main__image__box4{
     background-image: url("image/img9.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .features__main__image__box5{
     background-image: url("image/img10.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+                    /* Traitement du responsive */
+
+@media only screen and (max-width: 830px){
+    :root{
+        --featurePaddingMobile: 3rem;
+        --featureBoxheightMobil: 55.4rem;
+        --featureBoxwidthMobil: 30.6rem;
+
+    }
+/* feautures principale */
+
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .features{
+        padding: 2rem;
+        width: 50rem;
+        height: 110rem;
+        display: flex;
+        align-items: flex-start;
+    }
+/* feautures principale */
+    .features__main{
+        width: 50rem;
+        height: 110rem;
+        display: flex;
+        justify-content: space-evenly; 
+   }
+    .features__main__text{
+        width: 50rem;
+   }
+    .features__main__image{
+        width: 50rem;
+        height: 110rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;    
+   }
+   .featureBox{
+        width: 50rem;
+        height: 95rem;
+        margin-bottom: 2rem;
+    
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+
+/* feautures principale */
+    .features{
+        padding: 2rem;
+        width: 50rem;
+        height: 110rem;
+        display: flex;
+        align-items: flex-start;
+    }
+/* feautures principale */
+    .features__main{
+        width: 50rem;
+        height: 110rem;
+        display: flex;
+        justify-content: space-evenly; 
+   }
+   .features__main__text h1{
+        font-size: 1.5rem;
+   }
+    .features__main__text{
+        width: 50rem;
+        display: flex;
+        justify-content: space-evenly;
+   }    
+   .featureBox{
+        width: 30rem;
+        height: 95rem;
+        margin-bottom: 2rem;
+    
+    }
+
 }
