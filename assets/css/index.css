@@ -1,49 +1,43 @@
-@import url("https://fonts.googleapis.com/css2? family= Poppins:wght@300 & family= Roboto:wght@300 & display=swap");
 
-:root {
-  /* Concernant l'entete */
-  --BodyColor: #ffffff;
-  --headerColor: #0f172a;
-  --mainHeadlineSize: 7.2rem;
-  --buttonHead: #0f172a;
-  --buttonColor: #be123c;
-  --textWoketyamo: 3.2rem;
-  --navBarheidth: 9.6rem;
-  --navBarpadding: 2.4rem, 8rem, 2.4rem, 8rem;
-  --raduisButton: 0.5rem;
-  /* proprietes de la section apres l'entete */
-  --primarySectionColor: #f1f5f9;
-  --primarySectionPadding: 4.8rem, 8rem, 4.8rem, 8rem;
-  --primarySectionheight: 12.8rem;
-  /* proprietes de la section feature (PADDING DE 8rem a UTILISER SUR TOUT LES SECTIONS)*/
-  --sectionFeaturePadding: 8rem;
-  --featureBoxheight: 35.4rem;
-  --featureBoxwidth: 23.6rem;
-  --featureBoxborder: 0.1rem;
-  --featureBoxraduis: 0.5rem;
-  /* propriétes de la section "lates masterpieces" */
-  --boxHeadlinewidth: 30rem;
-  --boxHeadlineheight: 22rem;
-  --boxHeadlineraduis: 0.4rem;
-  /* proprietes de la section "Best Solution for your ....." */
-  --secondSection: #475569;
-  /* police d'ecriture des grands titres */
-  --titleHead: "Roboto", sans serif;
-  /* proprietes de la dernier section */
-  --sectionEnd: #0f172a;
-  /* Taille de tout les grands titre excepté celui de l'entete */
-  --sizeTitle: 5.6rem;
-}
-html {
-  margin: 0;
-  padding: 0;
-  border: none;
-  font-size: 10px;
-}
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300 & family= Roboto:wght@300 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300;500&display=swap');
+
+
+:root{
+/* Concernant l'entete */
+    --BodyColor: #FFFFFF;
+    --headerColor:  #0F172A;
+    --mainHeadlineSize: 7.2rem;
+    --buttonHead: #0F172A;
+    --buttonColor:  #BE123C;
+    --textWoketyamo: 3.2rem;
+    --navBarheidth: 9.6rem;
+    --navBarpadding: 2.4rem, 8rem, 2.4rem, 8rem;
+    --raduisButton: .5rem;
+/* proprietes de la section apres l'entete */
+    --primarySectionColor: #F1F5F9;
+    --primarySectionPadding: 4.8rem, 8rem, 4.8rem, 8rem; 
+    --primarySectionheight: 12.8rem;
+/* proprietes de la section feature (PADDING DE 8rem a UTILISER SUR TOUT LES SECTIONS)*/
+    --sectionFeaturePadding: 6.5rem; 
+    --sectionFeatureWidth: 144rem; 
+    --sectionFeatureHeight: 58.6rem; 
+    --featureBoxheight: 35.4rem;
+    --featureBoxwidth: 23.6rem;
+    --featureBoxborder: .1rem;
+    --featureBoxraduis: .5rem;
+/* propriétes de la section "lates masterpieces" */
+    --boxHeadlinewidth: 30rem;
+    --boxHeadlineheight: 22rem;
+    --boxHeadlineraduis: .4rem;
+/* proprietes de la section "Best Solution for your ....." */
+    --secondSection:  #475569;
+/* police d'ecriture des grands titres */
+    --titleHeadFont: 'Roboto', sans-serif;; 
+/* proprietes de la dernier section */
+    --sectionEnd: #0F172A;
+/* Taille de tout les grands titre excepté celui de l'entete */
+    --sizeTitle : 5.6rem
 }
 
 .logo {
@@ -64,4 +58,83 @@ p {
   margin-top: -25px;
   color: var(--secondSection);
   font-family: var();
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Traitement de la section features */
+.features{
+    width: var(--sectionFeatureWidth);
+    height: var(--sectionFeatureHeight);
+    background-color: var(--BodyColor);
+    border: 1px solid black;
+    padding: var(--sectionFeaturePadding);
+    display: flex;
+    align-items: center;
+}
+
+.features__main{
+    width: 122rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+}
+.features__main__text{
+    width: 122rem;
+    height: 4.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.features__main__text h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--titleHeadFont);
+}
+.features__main__text a{
+    text-decoration: none;
+    color: blue;
+    font-size: 1.2rem;
+    font-family: var(--titleHeadFont);
+}
+.features__main__text a:hover{
+    color: rgb(45, 45, 163)
+}
+.features__main__image{
+    width: 122rem;
+    height: var(--sectionFeatureHeight);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.featureBox{
+    width: var(--featureBoxwidth);
+    height: var(--featureBoxheight);
+    border: var(--featureBoxborder);
+    border-radius: var(--featureBoxraduis);
+    cursor: pointer;
+    transition: 0.25s ease-out;
+}
+.featureBox:hover{
+    transform: scale(1.1);
+}
+.features__main__image__box1{
+    background-image: url("image/img6.svg");
+}
+.features__main__image__box2{
+    background-image: url("image/img7.svg");
+}
+.features__main__image__box3{
+    background-image: url("image/img8.svg");
+}
+.features__main__image__box4{
+    background-image: url("image/img9.svg");
+}
+.features__main__image__box5{
+    background-image: url("image/img10.svg");
 }
