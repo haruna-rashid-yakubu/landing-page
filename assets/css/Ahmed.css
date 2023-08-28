@@ -7,7 +7,7 @@
     --mainHeadlineSize: 7.2rem;
     --buttonHead: #0F172A;
     --buttonColor:  #BE123C;
-    --textWoketyamo: 5.2rem;
+    --textWoketyamo: 3.2rem;
     --navBarheidth: 9.6rem;
     --navBarpadding: 2.4rem, 8rem, 2.4rem, 8rem;
     --raduisButton: .5rem;
@@ -65,7 +65,7 @@ header h1{
 
 .nav_bar a{
     color: var(--BodyColor);
-    font-size: 3rem;
+    font-size: 2rem;
     text-decoration: none;
     margin-left: 3rem;
     
@@ -76,10 +76,10 @@ header h1{
     border: .2rem solid #fff;
     border-radius: var(--raduisButton);
     color: var(--BodyColor);
-    font-size: 2.5rem;
+    font-size: 2rem;
     height: 6rem;
     margin-left: 4rem;
-    width: 15rem;
+    width: 12rem;
 }
 
 .nav_bar__button:hover{
